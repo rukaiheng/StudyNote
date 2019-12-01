@@ -140,3 +140,9 @@ echo "the execute file is : $0";
 echo "the first parameter: $1";
 echo "the second Parameter: $2";
  ```
+* **#$**: parameter count
+* **$***: use the single string to show all the paramters.
+* the brackets used in shell often used to check the validation of the script.
+
+## Operator if shell
+* **Notice** : there must not be space between values and operators.

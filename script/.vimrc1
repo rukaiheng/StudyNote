@@ -1,0 +1,74 @@
+
+"=========================================================================
+"			configure for vundle
+"=========================================================================
+set nocompatible		" only use vim but not vi
+filetype on			" close the file type
+
+" set the funtime path to include Vundle and initialize it
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage start
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'bling/vim-airline'
+"Plugin 'vim-airline/vim-airline-thems'
+Plugin 'Yggdroot/indentLine'
+Plugin 'bling/vim-bufferline'
+Plugin 'Valloric/YouCompleteMe'
+
+" Please put your plugins here
+call vundle#end()
+filetype plugin indent on
+
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+let g:ycm_path_to_python_interpreter = '/usr/bin/python3'
+let g:ycm_seed_identifiers_with_syntax=1
+let g:ycm_complete_in_comments=1
+let g:ycm_collect_identifiers_from_comments_and_strings = 0
+"how many charts do you want to type in to triger the completion
+let g:ycm_min_num_of_chars_for_completion=2
+"close the preview window after the code completion
+let g:ycm_autoclose_preview_window_after_completion=1
+"omit the cash 
+let g:ycm_cache_omnifunc=0
+"Complete the strings
+let g:ycm_complete_in_strings = 1
+let g:ycm_seed_identifiers_with_syntax=1 "补全关键字 
+
+set number			" let the vim editor show the line index
+set nowrap			" do not wrap the line in vim 
+set encoding=utf-8		" set the encoding for vim
+
+"=========================================================================
+"                   Here we set the style for python
+" ========================================================================
+
+au BufNewFile, BufRead *.py
+\ set tabstop = 4		" set the 4 space for the table
+\ set softtabstop = 4		" set the 4 space for the soft table stop
+\ set textwidth = 79 		" the maximum width of the line
+\ set expandtab			" use space key instead of tab key
+\ set autoindent		" auto indent in vim
+\ set fileformat = unix		" the format should be unix
+
+"========================================================================
+"			For the window split
+"========================================================================
+
+set splitright
+
+set foldmethod=indent		" If there are many code in a single page, we need fold the code 
+set foldlevel=99
+"========================================================================
+"			Auto run the script
+"========================================================================
+
+map <F5> :call RunPython()<CR>
+
+func! RunPython()
+    exec "W"
+    if &filestyle == 'python'
+    endif
+endfunc
+

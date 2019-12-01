@@ -114,4 +114,27 @@ lsb_release: print the distribution-specific information.
 16. **ctrl+-->** : move the cursor to the beginning of the next word.
 17. **!!** : excute the last command.
 18. **!c** : excute the lastest comand begain with c
-19. 
+
+
+## Commnads In linux 
+* **find** : atime, ctime and mtime: a represent acess, c represent change[include authority and other things], m represent modify. 
+* **fg** :if you want to go back to the background job of vim, you can use fg to call the vim page back. You can use bg to check the 
+jobs on the background. If you want to call the 2nd job, you can use fg 2 to show the job.
+* **jobs**: use jobs to show all worked jobs.
+
+
+
+## Shell script in linux
+* variable: you can use $variableName or ${ variableName } to get the value of the variable.
+*  ``` for file in `ls /etc`; ``` or ``` for file in $(ls /etc); ```
+* if you do not want to change the value of the variable. you should use readonly to decorate the variable.
+``` Name="good" 
+    readonly Name
+```
+* the shell file can be passed parameters: by using the following script.
+~~~
+#!/bin/bash
+echo "this is a demo for the shell parameters:";
+echo "the execute file is : $0";
+echo "the first parameter: $1";
+echo "the second Parameter: $2";

@@ -1,0 +1,7 @@
+D:\SGTC_Project\spc_tool\src\email\EmailTest\EmailTest\bin\Debug\EmailTest.exe.config
+D:\SGTC_Project\spc_tool\src\email\EmailTest\EmailTest\bin\Debug\EmailTest.exe
+D:\SGTC_Project\spc_tool\src\email\EmailTest\EmailTest\bin\Debug\EmailTest.pdb
+D:\SGTC_Project\spc_tool\src\email\EmailTest\EmailTest\obj\Debug\EmailTest.csprojResolveAssemblyReference.cache
+D:\SGTC_Project\spc_tool\src\email\EmailTest\EmailTest\obj\Debug\EmailTest.csproj.ResolveComReference.cache
+D:\SGTC_Project\spc_tool\src\email\EmailTest\EmailTest\obj\Debug\EmailTest.exe
+D:\SGTC_Project\spc_tool\src\email\EmailTest\EmailTest\obj\Debug\EmailTest.pdb
